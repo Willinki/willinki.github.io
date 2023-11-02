@@ -1,0 +1,119 @@
+/* Define the Solarized light color scheme */
+body {
+    font-family: "Computer Modern", "Latin Modern Math", "TeX Gyre Pagella", serif;
+    background-color: #fdf6e3; /* Base3 */
+    color: #657b83; /* Base00 */
+    margin: 2vh 25vw; /* 10% top and bottom margin, 10% left and right margin */
+    max-width: 50%; /* Set maximum width to 80% of the viewport */
+    padding: 0px; /* Optional: Add padding inside the centered content */
+    box-sizing: border-box; /* Optional: Include padding and border in the */
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px; /* Optional: Add padding to the header */
+    background-color: #eee8d5; /* Optional: Set background color for the header */
+}
+
+.header-logo img {
+    max-width: 200px; /* Set maximum width for the logo image */
+}
+
+.header-text {
+    margin-left: 20px; /* Add margin between the logo and text */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header-info {
+    margin-left: 20px; /* Add margin between the logo and text */
+    font-size: 20px;
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #268bd2; /* Blue */
+}
+
+/* Links */
+a {
+    color: #268bd2; /* Blue */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #2aa198; /* Cyan */
+}
+
+/* Code blocks */
+pre {
+    background-color: #eee8d5; /* Base2 */
+    color: #657b83; /* Base00 */
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Inline code */
+code {
+    background-color: #eee8d5; /* Base2 */
+    color: #657b83; /* Base00 */
+    padding: 2px 4px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+}
+
+/* Blockquotes */
+blockquote {
+    color: #93a1a1; /* Base1 */
+    border-left: 4px solid #93a1a1; /* Base1 */
+    margin: 0;
+    padding: 10px;
+}
+
+/* Lists */
+ul, ol {
+    margin: 10px 0;
+}
+
+/* List items */
+li {
+    margin-bottom: 5px;
+}
+
+/* Horizontal rule */
+hr {
+    border-color: #93a1a1; /* Base1 */
+}
+
+/* Button things */
+/* styles.css */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #268bd2; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline from the link */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2aa198; /* Button background color on hover */
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        margin: 0vh 0; /* 5% top and bottom margin, 0 left and right margin */
+        max-width: 100%; /* Occupies full width on mobile devices */
+    }
+}
