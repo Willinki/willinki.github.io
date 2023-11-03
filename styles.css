@@ -92,9 +92,17 @@ hr {
 
 /* Button things */
 /* styles.css */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin between header and buttons */
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: #268bd2; /* Button background color */
     color: #fff; /* Button text color */
     text-decoration: none; /* Remove underline from the link */
@@ -102,11 +110,25 @@ hr {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    font-family: "Computer Modern Sans Serif", sans-serif;
 }
 
 .button:hover {
     background-color: #2aa198; /* Button background color on hover */
+    color: #fff; /* Button text color */
 }
+
+.footer {
+    text-align: center; /* Center the image horizontally */
+    padding: 0; /* Optional padding for the footer */
+    background-color: #eee8d5; /* Optional background color for the footer */
+    margin-top: 20px;
+}
+
+.footer img {
+    max-width: 100%; /* Make sure the image does not exceed the container width */
+}
+
 
 
 
