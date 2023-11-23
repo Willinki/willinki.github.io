@@ -1,0 +1,206 @@
+/* Define the Solarized light color scheme */
+body {
+    font-family: "Computer Modern", "Latin Modern Math", "TeX Gyre Pagella", serif;
+    font-size: 20px;
+    background-color: #fdf6e3; /* Base3 */
+    color: #657b83; /* Base00 */
+    margin: 2vh 20vw; /* 10% top and bottom margin, 10% left and right margin */
+    max-width: 60%;
+    padding: 0px; /* Optional: Add padding inside the centered content */
+    box-sizing: border-box; /* Optional: Include padding and border in the */
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px; /* Optional: Add padding to the header */
+    background-color: #eee8d5; /* Optional: Set background color for the header */
+}
+
+.header-logo img {
+    max-width: 200px; /* Set maximum width for the logo image */
+}
+
+.header-text {
+    margin-left: 20px; /* Add margin between the logo and text */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-info {
+    margin-left: 20px; /* Add margin between the logo and text */
+    font-size: 1.3rem;
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+/* Headings */
+h1, h2 {
+    color: #6c71c4; /* Blue */
+}
+h3, h4, h5, h6 {
+    color: #6c71c4
+}
+/* Links */
+a {
+    color: #268bd2; /* Blue */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #2aa198; /* Cyan */
+}
+
+/* Code blocks */
+pre {
+    background-color: #eee8d5; /* Base2 */
+    color: #657b83; /* Base00 */
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Inline code */
+code {
+    background-color: #eee8d5; /* Base2 */
+    color: #657b83; /* Base00 */
+    padding: 2px 4px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+}
+
+/* Blockquotes */
+blockquote {
+    color: #93a1a1; /* Base1 */
+    border-left: 4px solid #93a1a1; /* Base1 */
+    margin: 0;
+    padding: 10px;
+}
+
+/* Lists */
+ul, ol {
+    margin: 10px 0;
+}
+
+/* List items */
+li {
+    margin-bottom: 5px;
+}
+
+/* Horizontal rule */
+hr {
+    border-color: #93a1a1; /* Base1 */
+}
+
+/* Button things */
+/* styles.css */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin between header and buttons */
+    margin-down: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #268bd2; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline from the link */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3;
+    cursor: pointer;
+    font-family: "Computer Modern Sans Serif", sans-serif;
+}
+
+.button:hover {
+    background-color: #2aa198; /* Button background color on hover */
+    color: #fff; /* Button text color */
+}
+.section {
+    font-size: 1.1rem;
+    padding: 5px;
+    margin-bottom: 10px;
+    /*background-color: #eee8d5;*/
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    color: #657b83; /* Text color */
+}
+
+.section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #6c71c4; /* Header color for h3 */
+}
+
+.section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #6c71c4; /* Different color for h4 */
+}
+
+.section h5 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #859900; /* Different color for h5 */
+}
+
+.section h6 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: #cb4b16; /* Different color for h6 */
+}
+
+.section li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #657b83; /* Text color */
+}
+
+.section li a {
+    text-decoration: none;
+    color: #268bd2; /* Link color */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+.section li a:hover {
+    color: #2aa198; /* Cyan */
+}
+
+.section .voice::after {
+    content: " ||"; /* Custom separator content */
+    color: #657b83; /* Color of the separator */
+}
+
+.footer {
+    text-align: center; /* Center the image horizontally */
+    padding: 0; /* Optional padding for the footer */
+    margin-top: 20px;
+}
+
+.footer img {
+    max-width: 100%; /* Make sure the image does not exceed the container width */
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        margin: 0vh 0; /* 5% top and bottom margin, 0 left and right margin */
+        max-width: 100%; /* Occupies full width on mobile devices */
+    }
+}
