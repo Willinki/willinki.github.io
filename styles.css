@@ -200,7 +200,45 @@ hr {
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     body {
-        margin: 0vh 0; /* 5% top and bottom margin, 0 left and right margin */
-        max-width: 100%; /* Occupies full width on mobile devices */
+        margin: 0 auto; /* 5% top and bottom margin, 0 left and right margin */
+        max-width: 95%; /* Occupies full width on mobile devices */
     }
+
+    .buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+        width: 100%; /* Each button takes 100% of the horizontal space */
+    }
+
+    .button {
+        display: block; /* Display as block to take full width */
+        width: 100%; /* Each button takes 100% of the horizontal space */
+        margin: 5px 0; /* Add margin between buttons */
+    }
+
+    .header {
+        flex-direction: column; /* Display items in a column */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .header-logo img {
+        max-width: 100%; /* Adjust the image size */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .header-text,
+    .header-info {
+        text-align: center; /* Center align text */
+        margin: 0; /* Reset margin for text */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    body {
+        margin: 0 auto; /* Center content with automatic left and right margins */
+        max-width: 80%; /* Occupies 80% width on devices between 768px and 1280px */
+    }
+
+    /* Other styles specific to this resolution range */
 }
