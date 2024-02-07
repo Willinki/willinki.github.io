@@ -52,6 +52,13 @@ a:hover {
     color: #2aa198; /* Cyan */
 }
 
+hr {
+    border: 0;
+    height: 2px; /* Adjust the height of the line */
+    background: linear-gradient(to right, transparent, #93a1a1, transparent); /* Use a gradient for shading */
+    margin: 20px 0; /* Adjust margin for spacing */
+}
+
 /* Code blocks */
 pre {
     background-color: #eee8d5; /* Base2 */
@@ -94,7 +101,6 @@ hr {
 }
 
 /* Button things */
-/* styles.css */
 .buttons {
     display: flex;
     justify-content: center;
@@ -117,10 +123,33 @@ hr {
     font-family: "Computer Modern Sans Serif", sans-serif;
 }
 
+/* section buttons */
+.sectionbuttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin between header and buttons */
+    margin-down: 20px;
+}
+
+.sectionbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #6c71c4; /* Button text color */
+    text-decoration: underline; /* Remove underline from the link */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3;
+    cursor: pointer;
+    font-family: "Computer Modern", serif;
+}
+
 .button:hover {
     background-color: #2aa198; /* Button background color on hover */
     color: #fff; /* Button text color */
 }
+
 .section {
     font-size: 1.1rem;
     padding: 5px;
